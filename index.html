@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Zheng Jiayi / Jiayi Zheng 的个人作品集。环境工程、环境微生物组、生物信息学、人工智能与跨学科研究。">
+<meta name="theme-color" content="#102a35">
+<title>Jiayi Zheng — Personal Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#142d36;--muted:#65777c;--paper:#f6f7f4;--white:#fff;--teal:#2c7774;--mint:#dcebe5;--line:#dce3df;--gold:#c49b61;--dark:#102a35;--serif:Georgia,serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans","Noto Sans SC",sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.13);position:absolute;top:0;left:0;right:0;z-index:5;color:#fff}.brand{font-weight:700;letter-spacing:.08em;font-size:15px}.brand span{color:#a8d0c2}.nav{display:flex;gap:27px;align-items:center;font-size:12px;letter-spacing:.07em;color:#d7e3df}.nav a:hover{color:#a8d0c2}.lang{border:1px solid #78918e;border-radius:30px;padding:6px 12px;background:transparent;color:#fff;cursor:pointer;font:inherit;font-size:11px}.hero{background:radial-gradient(ellipse at 78% 25%,#28505a 0%,transparent 42%),linear-gradient(120deg,#102a35,#173b45 62%,#1c4a4a);color:#fff;min-height:690px;padding:165px 0 105px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(190,220,207,.15);border-radius:50%;right:-120px;bottom:-280px;box-shadow:0 0 0 45px rgba(190,220,207,.025),0 0 0 90px rgba(190,220,207,.02)}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:60px;align-items:center;position:relative;z-index:1}.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#a8d0c2;font-weight:600}.hero h1{font-size:clamp(42px,6vw,76px);line-height:1.12;letter-spacing:-.045em;margin:23px 0 16px;font-weight:600}.hero h1 em{font-family:var(--serif);font-weight:400;color:#a8d0c2}.hero-sub{font-size:17px;color:#d1dfda;max-width:640px;line-height:1.9}.hero-meta{display:flex;gap:22px;flex-wrap:wrap;margin:31px 0;color:#b7c9c5;font-size:12px}.hero-meta span:before{content:"";display:inline-block;width:5px;height:5px;background:#91bcae;border-radius:50%;margin:0 9px 2px 0}.actions{display:flex;gap:12px;margin-top:35px;flex-wrap:wrap}.btn{padding:12px 20px;border-radius:3px;font-size:12px;font-weight:600;letter-spacing:.04em;display:inline-flex;align-items:center;gap:9px;transition:.2s}.btn-primary{background:#d9e9e1;color:#173640}.btn-primary:hover{background:#fff;transform:translateY(-2px)}.btn-ghost{border:1px solid #77928d;color:#fff}.btn-ghost:hover{border-color:#d9e9e1;background:#ffffff12}.hero-card{border:1px solid #ffffff30;background:#ffffff0a;backdrop-filter:blur(8px);padding:27px;max-width:310px;margin-left:auto}.monogram{font-family:var(--serif);font-size:78px;line-height:1;color:#b8d7ca;letter-spacing:-.08em}.hero-card .small{font-size:10px;letter-spacing:.16em;color:#a8c1b8;text-transform:uppercase;margin-top:18px}.hero-card p{font-size:13px;color:#d4e0dc;margin:8px 0 0}.hero-card hr{border:0;border-top:1px solid #ffffff25;margin:20px 0}
+.section{padding:105px 0}.section.white{background:#fff}.section.dark{background:var(--dark);color:#fff}.kicker{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);font-weight:700}.dark .kicker{color:#9cc8b7}.section-title{font-size:clamp(30px,4vw,43px);line-height:1.25;letter-spacing:-.035em;margin:12px 0 20px;font-weight:600}.intro{color:var(--muted);max-width:730px;font-size:15px}.dark .intro{color:#c0d0cb}.about-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:90px;margin-top:45px}.statement{font-family:var(--serif);font-size:30px;line-height:1.45;color:var(--teal)}.about-copy p{margin:0 0 17px;color:#53666b;font-size:14px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:50px}.stat{padding:22px 20px;background:#f2f6f3;border:1px solid #e3ebe6}.stat strong{display:block;font-size:30px;letter-spacing:-.04em;color:var(--teal)}.stat span{font-size:11px;color:#687b7b;display:block;margin-top:4px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px}.section-head .intro{max-width:450px}.timeline{margin-top:48px;border-top:1px solid var(--line)}.timeline-item{display:grid;grid-template-columns:190px 1fr;gap:35px;padding:29px 0;border-bottom:1px solid var(--line)}.time{font-size:11px;letter-spacing:.08em;color:var(--teal);font-weight:700;padding-top:5px}.timeline-item h3{font-size:17px;margin:0 0 5px}.timeline-item .sub{font-size:12px;color:#78878a;margin-bottom:10px}.timeline-item p{font-size:13px;color:#5c6e72;margin:0;max-width:760px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:45px}.project{background:#fff;border:1px solid #e3e9e5;padding:29px;min-height:270px;display:flex;flex-direction:column;transition:.25s}.project:hover{transform:translateY(-4px);box-shadow:0 18px 45px #183b3510;border-color:#c5d8ce}.project-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}.number{font-family:var(--serif);font-size:24px;color:#9bb7aa}.tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:5px 9px;background:#edf4ef;color:#46766a}.project h3{font-size:19px;line-height:1.45;margin:0 0 10px}.project p{font-size:13px;color:#637579;margin:0 0 20px}.project-foot{margin-top:auto;border-top:1px solid #edf0ed;padding-top:14px;font-size:11px;color:#67817a;display:flex;justify-content:space-between;gap:10px}
+.publication{padding:25px 0;border-bottom:1px solid #31505a;display:grid;grid-template-columns:115px 1fr;gap:25px}.pub-type{font-size:10px;letter-spacing:.13em;color:#9cc8b7;text-transform:uppercase;padding-top:5px}.publication h3{font-size:16px;line-height:1.55;margin:0 0 8px}.publication p{font-size:12px;color:#b7c9c4;margin:0}.publication a{color:#b9d9cc;border-bottom:1px solid #648c7d}.pub-note{font-size:11px;color:#93aaa4;margin-top:25px}
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:42px}.skill{padding:23px;background:#fff;border:1px solid #e3e9e5}.skill h3{font-size:14px;margin:0 0 13px}.chips{display:flex;flex-wrap:wrap;gap:7px}.chip{font-size:10px;color:#52706b;background:#eff5f1;padding:5px 9px;border-radius:2px}
+.award-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 45px;margin-top:42px}.award{padding:18px 0;border-bottom:1px solid #e4eae6;display:grid;grid-template-columns:65px 1fr;gap:15px}.award .year{font-size:11px;color:var(--teal);font-weight:700;padding-top:3px}.award h3{font-size:13px;margin:0 0 4px}.award p{font-size:11px;color:#7a898a;margin:0}
+.interest-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:40px}.interest{padding:21px;border:1px solid #31505a;background:#ffffff08}.interest b{font-size:12px;display:block;margin-bottom:7px;color:#d8e7e1}.interest span{font-size:11px;color:#a9c0b8}
+.contact{background:#dcebe5;padding:85px 0}.contact-grid{display:flex;justify-content:space-between;align-items:center;gap:40px}.contact h2{font-size:clamp(30px,4vw,44px);line-height:1.2;margin:10px 0}.contact p{color:#5c7470;font-size:13px}.contact-actions{display:flex;gap:10px;flex-wrap:wrap}.contact .btn-primary{background:var(--dark);color:#fff}.contact .btn-ghost{color:var(--dark);border-color:#9bb8ad}
+footer{background:#102a35;color:#8ea59e;padding:25px 0;font-size:10px;letter-spacing:.05em}.footer-inner{display:flex;justify-content:space-between;gap:20px}
+.note{font-size:10px;color:#82918f;margin-top:20px}
+@media(max-width:800px){.nav{display:none}.hero{padding:130px 0 75px;min-height:auto}.hero-grid{grid-template-columns:1fr;gap:35px}.hero-card{margin:0;max-width:100%;display:grid;grid-template-columns:90px 1fr;gap:0 18px}.monogram{grid-row:span 2;font-size:60px}.hero-card .small{margin-top:0}.hero-card hr{display:none}.about-grid{grid-template-columns:1fr;gap:20px}.stats{grid-template-columns:repeat(2,1fr)}.section{padding:75px 0}.section-head{display:block}.timeline-item{grid-template-columns:1fr;gap:7px}.cards{grid-template-columns:1fr}.skill-grid{grid-template-columns:1fr 1fr}.interest-grid{grid-template-columns:1fr 1fr}.award-grid{grid-template-columns:1fr}.contact-grid{display:block}.contact-actions{margin-top:25px}.publication{grid-template-columns:1fr;gap:5px}.footer-inner{display:block}.footer-inner span{display:block;margin-top:6px}}
+@media(max-width:460px){.wrap{width:min(100% - 34px,1160px)}.hero h1{font-size:43px}.skill-grid{grid-template-columns:1fr}.hero-meta{gap:10px}.stat{padding:17px}.stat strong{font-size:26px}}
+</style>
+</head>
+<body>
+<header class="topbar wrap">
+  <a class="brand" href="#home">JZ<span>.</span></a>
+  <nav class="nav">
+    <a href="#about">ABOUT</a><a href="#journey">JOURNEY</a><a href="#work">WORK</a><a href="#research">RESEARCH</a><a href="#skills">SKILLS</a><a href="#contact">CONTACT</a>
+  </nav>
+  <button class="lang" id="langBtn" aria-label="Switch language">EN / 中文</button>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="eyebrow" data-zh="个人作品集 · 研究与探索" data-en="PERSONAL PORTFOLIO · RESEARCH & EXPLORATION">个人作品集 · 研究与探索</div>
+   <h1>Jiayi <em>Zheng</em><br><span data-zh="郑佳怡" data-en="Zheng Jiayi">郑佳怡</span></h1>
+   <p class="hero-sub" data-zh="环境工程背景，持续探索环境科学、生物信息学与人工智能的交叉领域。关注真实问题，重视数据、证据与可复现的研究过程。" data-en="An environmental engineering graduate exploring the intersection of environmental science, bioinformatics and artificial intelligence. Driven by real-world questions, rigorous evidence and reproducible research.">环境工程背景，持续探索环境科学、生物信息学与人工智能的交叉领域。关注真实问题，重视数据、证据与可复现的研究过程。</p>
+   <div class="hero-meta"><span data-zh="华南师范大学" data-en="South China Normal University">华南师范大学</span><span data-zh="环境工程" data-en="Environmental Engineering">环境工程</span><span data-zh="专业排名 3 / ？" data-en="Ranked 3rd in major">专业排名第 3</span></div>
+   <div class="actions"><a class="btn btn-primary" href="#work" data-zh="探索我的经历 ↓" data-en="EXPLORE MY WORK ↓">探索我的经历 ↓</a><a class="btn btn-ghost" href="#contact" data-zh="联系我 ↗" data-en="GET IN TOUCH ↗">联系我 ↗</a></div>
+  </div>
+  <aside class="hero-card">
+   <div class="monogram">JZ</div><div class="small" data-zh="研究 · 技术 · 协作" data-en="RESEARCH · TECHNOLOGY · COLLABORATION">研究 · 技术 · 协作</div>
+   <p data-zh="以跨学科视角理解复杂问题，以行动把想法变成成果。" data-en="Understanding complex problems through an interdisciplinary lens, and turning ideas into outcomes.">以跨学科视角理解复杂问题，以行动把想法变成成果。</p>
+   <hr><div class="small">CURRENT FOCUS</div><p>Environmental Microbiome<br>Bioinformatics · AI for Environment</p>
+  </aside>
+ </div>
+</section>
+
+<section class="section white" id="about">
+ <div class="wrap">
+  <div class="kicker">01 / ABOUT ME</div>
+  <h2 class="section-title" data-zh="不止于一个专业标签。" data-en="More than a single discipline.">不止于一个专业标签。</h2>
+  <p class="intro" data-zh="我希望把环境科学的问题意识、数据分析的技术能力，以及团队协作中的执行力结合起来，解决复杂且真实的问题。" data-en="I bring together environmental problem-solving, data-driven methods and collaborative execution to work on complex, real-world challenges.">我希望把环境科学的问题意识、数据分析的技术能力，以及团队协作中的执行力结合起来，解决复杂且真实的问题。</p>
+  <div class="about-grid">
+   <div class="statement" data-zh="保持好奇，尊重证据；既能深入研究，也能推动事情向前。" data-en="Stay curious. Respect evidence. Go deep into research—and move things forward.">保持好奇，尊重证据；既能深入研究，也能推动事情向前。</div>
+   <div class="about-copy">
+    <p data-zh="我毕业于华南师范大学环境工程专业，专业排名第 3。学习与科研过程中，我逐渐形成了以数据驱动研究为核心的工作方式，并将兴趣拓展至环境微生物组、抗生素耐药性（AMR）、宏基因组学和人工智能辅助环境分析。" data-en="I studied Environmental Engineering at South China Normal University, ranking 3rd in my major. My academic work has shaped a data-driven approach to research, with interests spanning environmental microbiomes, antimicrobial resistance (AMR), metagenomics and AI-assisted environmental analysis.">我毕业于华南师范大学环境工程专业，专业排名第 3。学习与科研过程中，我逐渐形成了以数据驱动研究为核心的工作方式，并将兴趣拓展至环境微生物组、抗生素耐药性（AMR）、宏基因组学和人工智能辅助环境分析。</p>
+    <p data-zh="除了科研，我也长期参与学生组织与校内行政事务，曾担任科调部部长、年级级长，并参与大学生创新创业项目。这些经历让我能够在多任务环境中协调资源、沟通不同角色，并对交付结果负责。" data-en="Beyond research, I have taken on student leadership and university administrative responsibilities, including leading a research-affairs department and serving as a cohort representative. These experiences strengthened my communication, coordination and ownership in multi-task environments.">除了科研，我也长期参与学生组织与校内行政事务，曾担任科调部部长、年级级长，并参与大学生创新创业项目。这些经历让我能够在多任务环境中协调资源、沟通不同角色，并对交付结果负责。</p>
+    <p data-zh="我乐于学习新工具、进入新领域，也重视把复杂内容讲清楚、把团队目标拆解成可执行的步骤。" data-en="I enjoy learning new tools and entering unfamiliar fields. I value clear communication and translating shared goals into practical steps.">我乐于学习新工具、进入新领域，也重视把复杂内容讲清楚、把团队目标拆解成可执行的步骤。</p>
+   </div>
+  </div>
+  <div class="stats">
+   <div class="stat"><strong>3<sup>rd</sup></strong><span data-zh="专业排名" data-en="Major ranking">专业排名</span></div>
+   <div class="stat"><strong>1st</strong><span data-zh="第一作者论文" data-en="First-author paper">第一作者论文</span></div>
+   <div class="stat"><strong>3</strong><span data-zh="篇论文参与（不同作者位次）" data-en="Research papers (various authorship positions)">篇论文参与（不同作者位次）</span></div>
+   <div class="stat"><strong>5+</strong><span data-zh="竞赛与项目荣誉" data-en="Awards & project recognitions">竞赛与项目荣誉</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="journey">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">02 / JOURNEY</div><h2 class="section-title" data-zh="学习与成长轨迹" data-en="Education & Experience">学习与成长轨迹</h2></div><p class="intro" data-zh="从环境工程出发，在科研、技术学习与组织协作中不断拓展能力边界。" data-en="Building from environmental engineering, and expanding through research, technical learning and team leadership.">从环境工程出发，在科研、技术学习与组织协作中不断拓展能力边界。</p></div>
+  <div class="timeline">
+   <div class="timeline-item"><div class="time">UNDERGRADUATE</div><div><h3 data-zh="华南师范大学 · 环境工程" data-en="South China Normal University · Environmental Engineering">华南师范大学 · 环境工程</h3><div class="sub" data-zh="本科阶段｜专业排名第 3" data-en="Undergraduate study | Ranked 3rd in major">本科阶段｜专业排名第 3</div><p data-zh="系统学习环境工程基础，并围绕环境微生物、污染物风险、生态过程与数据分析开展科研训练。" data-en="Studied environmental engineering fundamentals and developed research experience in environmental microbiology, pollutant risk, ecological processes and data analysis.">系统学习环境工程基础，并围绕环境微生物、污染物风险、生态过程与数据分析开展科研训练。</p></div></div>
+   <div class="timeline-item"><div class="time">AI CERTIFICATE</div><div><h3 data-zh="环境人工智能方向校级证书课程" data-en="University Certificate in Environmental AI">环境人工智能方向校级证书课程</h3><div class="sub" data-zh="环境多模态数据分析与智能建模" data-en="Environmental multimodal data analysis & intelligent modeling">环境多模态数据分析与智能建模</div><p data-zh="课程涵盖污染物 AI 与微观反应模拟、环境风险 AI 与宏观评估、生态建模及 AI 环境管理；学习机器学习流程、CNN、迁移学习与 PyTorch 等方法。" data-en="Coursework covered pollutant AI and microscale reaction simulation, AI-based environmental risk assessment, ecological modeling and AI-enabled environmental management, with hands-on learning in ML pipelines, CNNs, transfer learning and PyTorch.">课程涵盖污染物 AI 与微观反应模拟、环境风险 AI 与宏观评估、生态建模及 AI 环境管理；学习机器学习流程、CNN、迁移学习与 PyTorch 等方法。</p></div></div>
+   <div class="timeline-item"><div class="time">RESEARCH</div><div><h3 data-zh="环境微生物与宏基因组研究" data-en="Environmental Microbiology & Metagenomics Research">环境微生物与宏基因组研究</h3><div class="sub" data-zh="第一作者研究 · 多项合作研究" data-en="First-author study · Collaborative research">第一作者研究 · 多项合作研究</div><p data-zh="参与从研究问题、数据处理、统计分析到论文写作的科研流程，关注不动杆菌、病毒组、耐药组及环境健康风险。" data-en="Contributed across research design, data processing, statistical analysis and manuscript writing, focusing on Acinetobacter, viromes, resistomes and environmental health risks.">参与从研究问题、数据处理、统计分析到论文写作的科研流程，关注不动杆菌、病毒组、耐药组及环境健康风险。</p></div></div>
+   <div class="timeline-item"><div class="time">LEADERSHIP</div><div><h3 data-zh="学生组织与校内行政工作" data-en="Student Leadership & University Administration">学生组织与校内行政工作</h3><div class="sub" data-zh="科调部部长 · 年级级长 · 创新创业项目成员" data-en="Head of Research Affairs · Cohort Representative · Innovation Project Member">科调部部长 · 年级级长 · 创新创业项目成员</div><p data-zh="参与团队管理、活动与事务协调、信息沟通、项目任务分工及进度推进，积累了跨角色协作和执行经验。" data-en="Coordinated teams, activities, communications, project responsibilities and timelines, building experience in cross-functional collaboration and execution.">参与团队管理、活动与事务协调、信息沟通、项目任务分工及进度推进，积累了跨角色协作和执行经验。</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="section white" id="work">
+ <div class="wrap">
+  <div class="kicker">03 / SELECTED WORK</div><h2 class="section-title" data-zh="代表性研究与项目" data-en="Selected Research & Projects">代表性研究与项目</h2>
+  <p class="intro" data-zh="我关注的不只是分析结果，也包括研究问题如何提出、数据如何处理、结论如何被证据支持。" data-en="I care not only about results, but also how questions are framed, data are processed and conclusions are supported by evidence.">我关注的不只是分析结果，也包括研究问题如何提出、数据如何处理、结论如何被证据支持。</p>
+  <div class="cards">
+   <article class="project"><div class="project-top"><span class="number">01</span><span class="tag">FIRST-AUTHOR RESEARCH</span></div><h3 data-zh="中国河流宏基因组中的不动杆菌：健康风险、生态功能与基因组多样性" data-en="Acinetobacter in Chinese Rivers: Health Risks, Ecological Functions & Genomic Diversity">中国河流宏基因组中的不动杆菌：健康风险、生态功能与基因组多样性</h3><p data-zh="基于 1,253 份中国河流宏基因组数据，开展不动杆菌属的分类组成、生态分布、功能潜力与健康相关风险分析，并重建 MAGs 以补充基因组多样性认知。" data-en="Analyzed 1,253 river metagenomes from China to characterize Acinetobacter taxonomy, ecological distribution, functional potential and health-related risks, with MAG reconstruction to explore genomic diversity.">基于 1,253 份中国河流宏基因组数据，开展不动杆菌属的分类组成、生态分布、功能潜力与健康相关风险分析，并重建 MAGs 以补充基因组多样性认知。</p><div class="project-foot"><span>Scientific Reports · 2026</span><span>296 MAGs · 34 species</span></div></article>
+   <article class="project"><div class="project-top"><span class="number">02</span><span class="tag">VIROME BIOINFORMATICS</span></div><h3 data-zh="多环境病毒组数据整合与群落多样性分析" data-en="Multi-environment Virome Integration & Diversity Analysis">多环境病毒组数据整合与群落多样性分析</h3><p data-zh="整合湖泊水体、河流水体、河流沉积物与土壤样本，构建病毒丰度矩阵与分类注释结果，开展样本质控、Alpha/Beta 多样性及群落结构比较。" data-en="Integrated lake water, river water, river sediment and soil samples; built viral abundance and taxonomy tables; performed sample QC, alpha/beta diversity and community-structure comparisons.">整合湖泊水体、河流水体、河流沉积物与土壤样本，构建病毒丰度矩阵与分类注释结果，开展样本质控、Alpha/Beta 多样性及群落结构比较。</p><div class="project-foot"><span>R · CoverM · Taxonomic integration</span><span>Reproducible workflow</span></div></article>
+   <article class="project"><div class="project-top"><span class="number">03</span><span class="tag">AMR & ENVIRONMENTAL HEALTH</span></div><h3 data-zh="环境耐药组与抗生素耐药性传播研究" data-en="Environmental Resistomes & Antimicrobial Resistance">环境耐药组与抗生素耐药性传播研究</h3><p data-zh="围绕环境中抗生素耐药基因的分布、潜在驱动因素及健康风险开展数据分析与合作研究，关注微生物群落、环境因子与耐药性传播之间的联系。" data-en="Explored the distribution, potential drivers and health implications of environmental antibiotic resistance genes, focusing on links among microbial communities, environmental factors and resistance dissemination.">围绕环境中抗生素耐药基因的分布、潜在驱动因素及健康风险开展数据分析与合作研究，关注微生物群落、环境因子与耐药性传播之间的联系。</p><div class="project-foot"><span>Metagenomics · ARG annotation</span><span>Collaborative research</span></div></article>
+   <article class="project"><div class="project-top"><span class="number">04</span><span class="tag">INNOVATION PROJECT</span></div><h3 data-zh="大学生创新创业项目与团队协作" data-en="Student Innovation & Entrepreneurship Projects">大学生创新创业项目与团队协作</h3><p data-zh="参与项目方案设计、任务分工、时间与预算安排、阶段推进和结题材料撰写；在团队协作中承担组织协调与执行工作。" data-en="Contributed to project proposals, task allocation, timelines, budgeting, progress tracking and final reporting, with a focus on coordination and execution.">参与项目方案设计、任务分工、时间与预算安排、阶段推进和结题材料撰写；在团队协作中承担组织协调与执行工作。</p><div class="project-foot"><span>Project coordination</span><span>University & provincial level</span></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="section dark" id="research">
+ <div class="wrap">
+  <div class="kicker">04 / PUBLICATIONS</div><h2 class="section-title" data-zh="学术研究与论文" data-en="Publications & Research">学术研究与论文</h2>
+  <p class="intro" data-zh="以论文与合作研究记录阶段性成果。作者位次与发表状态按当前简历信息整理，正式使用前建议逐项核对。" data-en="A snapshot of my research contributions. Authorship positions and publication status are based on the current CV information and should be verified before formal publication.">以论文与合作研究记录阶段性成果。作者位次与发表状态按当前简历信息整理，正式使用前建议逐项核对。</p>
+  <div class="publication"><div class="pub-type">FIRST AUTHOR<br>2026</div><div><h3>Metagenomic characterization of Acinetobacter in rivers reveals health-related risks, ecological functions, and underrepresented genomic diversity</h3><p>Scientific Reports · DOI: <a href="https://doi.org/10.1038/s41598-026-62738-2" target="_blank" rel="noopener">10.1038/s41598-026-62738-2 ↗</a></p></div></div>
+  <div class="publication"><div class="pub-type">CO-AUTHOR<br>2026</div><div><h3 data-zh="地下水微生物与耐药组相关研究" data-en="Groundwater Microbiome & Resistome Research">地下水微生物与耐药组相关研究</h3><p>Communications Earth & Environment · 合作作者</p></div></div>
+  <div class="publication"><div class="pub-type">CO-AUTHOR<br>UNDER REVIEW</div><div><h3 data-zh="大陆尺度抗生素耐药基因驱动因素相关研究" data-en="Continental-scale Drivers of Antibiotic Resistance Genes">大陆尺度抗生素耐药基因驱动因素相关研究</h3><p>Microbiome · 合作作者 · Second-round peer review（以最新投稿状态为准）</p></div></div>
+  <p class="pub-note" data-zh="注：第二、第三项为研究经历概述，正式公开前请补充准确论文标题、作者列表、DOI 或可公开链接，并确认最新审稿状态。" data-en="Note: Please add exact titles, author lists, DOIs or public links for the second and third items, and verify the latest review status before publishing.">注：第二、第三项为研究经历概述，正式公开前请补充准确论文标题、作者列表、DOI 或可公开链接，并确认最新审稿状态。</p>
+ </div>
+</section>
+
+<section class="section" id="skills">
+ <div class="wrap">
+  <div class="kicker">05 / CAPABILITIES</div><h2 class="section-title" data-zh="技术能力与工作方式" data-en="Skills & Ways of Working">技术能力与工作方式</h2>
+  <p class="intro" data-zh="以实际项目为基础持续积累工具能力，并注重研究流程的可解释性与可复现性。" data-en="Continuously developing practical skills through projects, with an emphasis on interpretable and reproducible workflows.">以实际项目为基础持续积累工具能力，并注重研究流程的可解释性与可复现性。</p>
+  <div class="skill-grid">
+   <div class="skill"><h3>01 · Data & Programming</h3><div class="chips"><span class="chip">Python</span><span class="chip">R</span><span class="chip">Data wrangling</span><span class="chip">Visualization</span><span class="chip">Statistical analysis</span></div></div>
+   <div class="skill"><h3>02 · Bioinformatics</h3><div class="chips"><span class="chip">Metagenomics</span><span class="chip">Taxonomic annotation</span><span class="chip">Functional annotation</span><span class="chip">ARG analysis</span><span class="chip">Gephi</span><span class="chip">VOSviewer</span></div></div>
+   <div class="skill"><h3>03 · AI & Machine Learning</h3><div class="chips"><span class="chip">PyTorch</span><span class="chip">CNN</span><span class="chip">Transfer learning</span><span class="chip">Supervised learning</span><span class="chip">Model evaluation</span></div></div>
+   <div class="skill"><h3>04 · Environmental Modeling</h3><div class="chips"><span class="chip">EPANET</span><span class="chip">EPANET-MSX</span><span class="chip">Ecological modeling</span><span class="chip">Environmental risk</span></div></div>
+   <div class="skill"><h3>05 · Research Practice</h3><div class="chips"><span class="chip">Research design</span><span class="chip">Literature review</span><span class="chip">Scientific writing</span><span class="chip">Reproducible workflow</span></div></div>
+   <div class="skill"><h3>06 · Collaboration</h3><div class="chips"><span class="chip">Team coordination</span><span class="chip">Communication</span><span class="chip">Project execution</span><span class="chip">Presentation</span><span class="chip">CET-6</span></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="section white" id="awards">
+ <div class="wrap">
+  <div class="kicker">06 / RECOGNITION</div><h2 class="section-title" data-zh="竞赛、荣誉与实践" data-en="Awards & Recognition">竞赛、荣誉与实践</h2>
+  <div class="award-grid">
+   <div class="award"><div class="year">2025</div><div><h3 data-zh="中国国际大学生创新大赛 · 省级银奖" data-en="China International College Students' Innovation Competition · Provincial Silver">中国国际大学生创新大赛 · 省级银奖</h3><p data-zh="团队项目" data-en="Team project">团队项目</p></div></div>
+   <div class="award"><div class="year">2025</div><div><h3 data-zh="挑战杯大学生创业计划竞赛 · 省级银奖" data-en="Challenge Cup Entrepreneurship Competition · Provincial Silver">挑战杯大学生创业计划竞赛 · 省级银奖</h3><p data-zh="团队项目" data-en="Team project">团队项目</p></div></div>
+   <div class="award"><div class="year">2024</div><div><h3 data-zh="挑战杯课外学术科技作品竞赛 · 省级银奖" data-en="Challenge Cup Academic & Scientific Works · Provincial Silver">挑战杯课外学术科技作品竞赛 · 省级银奖</h3><p data-zh="团队项目" data-en="Team project">团队项目</p></div></div>
+   <div class="award"><div class="year">2024</div><div><h3 data-zh="校级创新创业项目 · 金种子计划" data-en="University Innovation Project · Golden Seed Program">校级创新创业项目 · 金种子计划</h3><p data-zh="项目组织与实施" data-en="Project coordination and implementation">项目组织与实施</p></div></div>
+   <div class="award"><div class="year">2024</div><div><h3 data-zh="校级荣誉与竞赛奖励" data-en="University-level Honors & Competition Awards">校级荣誉与竞赛奖励</h3><p data-zh="具体名称可在最终版本补充" data-en="Exact award title can be added in the final version">具体名称可在最终版本补充</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="section dark">
+ <div class="wrap">
+  <div class="kicker">07 / WHAT I EXPLORE</div><h2 class="section-title" data-zh="持续探索的方向" data-en="Areas I’m Exploring">持续探索的方向</h2>
+  <p class="intro" data-zh="我对跨学科问题保持开放，希望在研究深度与实际应用之间建立连接。" data-en="I stay open to interdisciplinary questions and seek to connect research depth with practical applications.">我对跨学科问题保持开放，希望在研究深度与实际应用之间建立连接。</p>
+  <div class="interest-grid">
+   <div class="interest"><b>Environmental Health</b><span data-zh="环境健康风险 · AMR 传播" data-en="Environmental risks · AMR dissemination">环境健康风险 · AMR 传播</span></div>
+   <div class="interest"><b>AI for Science</b><span data-zh="机器学习 · 多模态环境数据" data-en="Machine learning · Multimodal data">机器学习 · 多模态环境数据</span></div>
+   <div class="interest"><b>Bioinformatics</b><span data-zh="宏基因组 · 病毒组 · 微生物生态" data-en="Metagenomics · Viromes · Microbial ecology">宏基因组 · 病毒组 · 微生物生态</span></div>
+   <div class="interest"><b>Frontier Technologies</b><span data-zh="微纳制造 · 纳米探针 · 单细胞分析" data-en="Micro/nanofabrication · Nanoprobes · Single-cell analysis">微纳制造 · 纳米探针 · 单细胞分析</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap contact-grid">
+  <div><div class="kicker">08 / CONTACT</div><h2 data-zh="期待认识更多<br>有趣的人与机会。" data-en="Let’s connect<br>and create something meaningful.">期待认识更多<br>有趣的人与机会。</h2><p data-zh="如果你希望交流研究、技术、项目合作或职业机会，欢迎联系我。" data-en="Feel free to reach out for research, technology, collaboration or career opportunities.">如果你希望交流研究、技术、项目合作或职业机会，欢迎联系我。</p></div>
+  <div class="contact-actions"><a class="btn btn-primary" href="mailto:YOUR_EMAIL@example.com">EMAIL ME ↗</a><a class="btn btn-ghost" href="#" onclick="alert('请将此处替换为你的 LinkedIn / GitHub / ORCID 主页链接。');return false;">PROFESSIONAL PROFILE ↗</a></div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap footer-inner"><span>© 2026 JIAYI ZHENG · PERSONAL PORTFOLIO</span><span data-zh="保持好奇 · 持续创造 · 以证据为基础" data-en="STAY CURIOUS · KEEP BUILDING · FOLLOW THE EVIDENCE">保持好奇 · 持续创造 · 以证据为基础</span></div></footer>
+<script>
+const btn=document.getElementById('langBtn');let lang='zh';
+btn.addEventListener('click',()=>{lang=lang==='zh'?'en':'zh';document.documentElement.lang=lang==='zh'?'zh-CN':'en';document.querySelectorAll('[data-zh][data-en]').forEach(el=>{el.innerHTML=el.dataset[lang]});});
+</script>
+</body></html>
